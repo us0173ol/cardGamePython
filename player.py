@@ -2,7 +2,7 @@ from card import *
 from deck import *
 
 
-class Player (object):
+class Player(object):
 #player class with player attributes
     def __init__(self, name):
         self.name = name
