@@ -14,11 +14,12 @@ from blackjack import *
 
 def determine_a_winner(players, dealer, deck, d):
 
+
     for player in players:
 
         while d == True:
 
-            if player.getValue() == int(21) and dealer.getValue() < int(21):
+            if player.getValue() == 21 and dealer.getValue() < 21:
                 dealer.draw(deck)
                 print(dealer.name, "has: ")
                 dealer.showHand()
