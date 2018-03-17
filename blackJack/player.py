@@ -17,8 +17,10 @@ class Player(object):
             card.show()
 #extract the value of the card so they can be added together for
 #comparison with the dealers hand
-    def getValue (self):
+    def getValue(self):
         handvalue = 0
         for cards in self.hand:
             handvalue += int(cards.value)
         return handvalue
+
+        
